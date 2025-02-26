@@ -1,0 +1,28 @@
+/* Ajusta el tamaño de las imágenes dentro de las cards */
+.card img {
+    width: 100%;  /* Hace que la imagen ocupe todo el ancho de la card */
+    height: 200px; /* Establece una altura fija */
+    object-fit: cover; /* Recorta la imagen para que encaje sin distorsionarse */
+}
+
+/* Asegura que las cards estén bien distribuidas debajo del menú */
+.contenido {
+    margin-top: 80px; /* Ajusta este valor según la altura de tu menú */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 20px; /* Espaciado entre las cards */
+}
+
+.card {
+    width: 300px; /* Establece un ancho uniforme para todas las cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+}
