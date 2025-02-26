@@ -16,6 +16,7 @@
           <li><a href="index.php?accion=alta_prod" class="text-light text-decoration-none">Alta Producto</a></li>
           <li><a href="index.php?accion=usuario" class="text-light text-decoration-none">Clientes</a></li>
           <li><a href="index.php?accion=login" class="text-light text-decoration-none">Iniciar sesión</a></li>
+          <li><a href="index.php?accion=mapa" class="text-light text-decoration-none">Mapa</a></li>
         </ul>
       </div>
 

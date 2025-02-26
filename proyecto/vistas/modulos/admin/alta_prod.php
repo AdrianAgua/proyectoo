@@ -1,5 +1,9 @@
-
-<body>
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="index.php?accion=principal">Inicio</a></li>
+            <li>Registro de productos</li>
+        </ul>
+    </nav>
 
     <div class="container mt-5">
         <h2 class="text-center mb-4">Formulario de Alta de Productos</h2>

@@ -10,6 +10,14 @@
 </head>
 <body>
 
+<nav class="breadcrumbs">
+        <ul>
+            <li><a href="index.php?accion=principal">Inicio</a></li>
+            <li>Clientes</li>
+        </ul>
+    </nav>
+
+
 <!-- Carrusel corregido -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">

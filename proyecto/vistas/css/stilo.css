@@ -1,28 +1,101 @@
-/* Ajusta el tamaño de las imágenes dentro de las cards */
-.card img {
-    width: 100%;  /* Hace que la imagen ocupe todo el ancho de la card */
-    height: 200px; /* Establece una altura fija */
-    object-fit: cover; /* Recorta la imagen para que encaje sin distorsionarse */
+/*LOGIN*/
+
+/*ALTA*/
+
+/*NAV*/
+nav .nav-item{
+    color: #C5C5C5 !important;
 }
 
-/* Asegura que las cards estén bien distribuidas debajo del menú */
-.contenido {
-    margin-top: 80px; /* Ajusta este valor según la altura de tu menú */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*BREADCRUMBS*/
+    .breadcrumbs {
+        padding: 10px;
+        background-color: #f1f1f1;
+    }
 
-.card-deck {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra las cards horizontalmente */
-    gap: 20px; /* Espaciado entre las cards */
-}
+    .breadcrumbs ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 
-.card {
-    width: 300px; /* Establece un ancho uniforme para todas las cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden;
-}
+    .breadcrumbs ul li {
+        margin-right: 5px;
+    }
+
+    .breadcrumbs ul li:not(:last-child)::after {
+        content: ">";
+        margin-left: 5px;
+    }
+
+/*PRODUCTOS*/
+
+    /* Ajusta el tamaño de las imágenes dentro de las cards */
+    .card img {
+        width: 100%;  /* Hace que la imagen ocupe todo el ancho de la card */
+        height: 200px; /* Establece una altura fija */
+        object-fit: cover; /* Recorta la imagen para que encaje sin distorsionarse */
+    }
+
+    /* Asegura que las cards estén bien distribuidas debajo del menú */
+    .contenido {
+        margin-top: 80px; /* Ajusta este valor según la altura de tu menú */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra las cards horizontalmente */
+        gap: 20px; /* Espaciado entre las cards */
+    }
+
+    .card {
+        width: 300px; /* Establece un ancho uniforme para todas las cards */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+        border-radius: 10px; /* Bordes redondeados */
+        overflow: hidden;
+    }
+
+/*VENTAS*/
+
+/**/
+    
+
+/*MAPA*/
+
+    .container_MAP{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas como en la imagen */
+        gap: 40px; /* Espacio entre columnas */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .category {
+        font-weight: bold; /*Letra en negritas*/
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .container_MAP ul{
+        list-style: none !important; /*Eliminación de lista*/
+        padding: 0;
+        margin: 0;
+    }
+
+    .container_MAP li {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .container_MAP a{
+        text-decoration: none !important; /* Elimina el subrayado de los enlaces */
+        color: #2C2C2C !important;
+    }
+
+/*FOOTER*/
