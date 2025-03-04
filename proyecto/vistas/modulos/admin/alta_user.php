@@ -1,12 +1,4 @@
-<nav class="breadcrumbs">
-        <ul>
-            <li><a href="index.php?accion=principal">Inicio</a></li>
-            <li>Registro de usuarios</li>
-        </ul>
-    </nav>
-
-
-<div class="container mt-5">
+<div class="container-FORM mt-5">
         <h2 class="text-center mb-4">Formulario de Alta de Personal</h2>
         <form id="altaForm">
             <div class="row">
@@ -71,9 +63,11 @@
                     <textarea class="form-control" id="comentarios" name="comentarios"></textarea>
                 </div>
 
-            </div>
+                <div class="col-md-6 mb-3 enviar-container">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
             <?php
             $registro= new Controlador();
             $registro= $registro->alta_per();

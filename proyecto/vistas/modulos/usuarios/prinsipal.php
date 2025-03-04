@@ -4,20 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Cuenta</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-<nav class="breadcrumbs">
-        <ul>
-            <li><a href="index.php?accion=principal">Inicio</a></li>
-            <li>Clientes</li>
-        </ul>
-    </nav>
-
-
 <!-- Carrusel corregido -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -41,15 +32,31 @@
   </a>
 </div>
 
-<!-- Tarjeta de ejemplo -->
-<div class="card" style="width: 18rem; margin: 20px;">
-  <img src="vistas/imagenes/ejemplo.jpg" class="card-img-top" alt="Imagen tarjeta">
-  <div class="card-body">
-    <h5 class="card-title">Título de la tarjeta</h5>
-    <p class="card-text">Texto de ejemplo para la tarjeta.</p>
-    <a href="#" class="btn btn-primary">Ver más</a>
-  </div>
-</div>
+<div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item completed"><a href="index.php?accion=principal" class="text-white text-decoration-none">Inicio</a></li>
+                <li class="breadcrumb-item active">Clientes</li>
+            </ul>
+        </nav>
+    </div>
 
+<!-- Tarjeta de ejemplo -->
+  <div class="container mt-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">      
+        <div class="col d-flex justify-content-center">
+            <a href="#" class="card-link">
+                <div class="card h-100 shadow rounded-3">
+                    <img src="vistas/imagenes/.webp" class="card-img-top img-fluid" alt="Producto 1" style="height: 250px; object-fit: cover; width: 100%; padding: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <hr>
+                        <p class="card-text">Descripción breve del producto con detalles clave.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+      </div>
+  </div>
 </body>
 </html>

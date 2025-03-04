@@ -20,7 +20,7 @@
         <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
         
         <div class="mt-3 text-center">
-          <small>¿No tienes cuenta? <a href="#">Regístrate aquí</a></small>
+          <small>¿No tienes cuenta? <a href="index.php?accion=registro">Regístrate aquí</a></small>
         </div>
       </form>
     </div>

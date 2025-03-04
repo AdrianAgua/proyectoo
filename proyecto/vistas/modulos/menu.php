@@ -29,7 +29,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comentarios</a>
+          <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comentarios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?accion=alta_prod">Alta Producto</a>
@@ -54,24 +54,28 @@
   </div>
 </nav>
 
-
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+      
+      <!-- Encabezado -->
+      <div class="modal-header custom-header">
+        <h5 class="modal-title mx-auto"> Comentario</h5>
+        <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
-      <div class="modal-body">
-        <label for="comentarios" class="form-label">Comentario</label>
-          <textarea class="form-control" id="comentarios" name="comentarios"></textarea>
+
+      <!-- Cuerpo -->
+      <div class="modal-body text-center">
+        <textarea class="form-control" id="comentarios" name="comentarios"></textarea>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
+
+      <!-- Pie con botones -->
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn custom-btn" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn custom-btn-outline">Enviar</button>
       </div>
+      
     </div>
   </div>
 </div>
-

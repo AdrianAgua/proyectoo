@@ -1,33 +1,202 @@
 /*LOGIN*/
 
-/*ALTA*/
 
-/*NAV*/
-nav .nav-item{
-    color: #C5C5C5 !important;
+/*MODAL*/
+    .modal {
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+    }
+    .modal-header {
+        background: #64739F;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold !important;
+        position: relative;
+    }
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background: white;
+        color: red;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .modal-body {
+        padding: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+    .modal-footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    .modal-footer button {
+        border: 1px solid red;
+        background: white;
+        color: red;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    .modal-footer button:hover {
+        background: red;
+        color: white;
+    }
+
+
+/*ALTA*/
+    /* Contenedor del formulario */
+    .container-FORM {
+        max-width: 900px;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 50px auto;
+    }
+
+    /* Estilos para los inputs con sombra en la parte baja */
+    .form-control, .form-select, textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        font-size: 16px;
+        outline: none;
+        box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3); /* Sombra en la parte inferior */
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    /* Efecto al hacer foco */
+    .form-control:focus, .form-select:focus, textarea:focus {
+        box-shadow: 0 3px 0px rgba(90, 103, 216, 0.8); /* Sombra más intensa al enfocar */
+    }
+
+    /* Etiquetas del formulario */
+    .form-label {
+        font-weight: bold;
+        color: #333;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    /* Botón de Enviar alineado */
+    .enviar-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* Botón de enviar */
+    .btn-primary {
+        background-color: #5a67d8;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #434190;
+    }
+
+
+
+/*SLIDER*/
+
+.rounded{
+    height: 300px !important;
+    object-fit: contain !important; /* Recorta la imagen para que encaje sin distorsionarse */
 }
 
 /*BREADCRUMBS*/
-    .breadcrumbs {
-        padding: 10px;
-        background-color: #f1f1f1;
-    }
-
-    .breadcrumbs ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    /* Contenedor de breadcrumb */
+    .breadcrumb {
         display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
-    .breadcrumbs ul li {
-        margin-right: 5px;
+    /* Estilo base para cada elemento del breadcrumb */
+    .breadcrumb-item {
+        background: #E9E9EC;
+        color: white;
+        padding: 10px 20px; /* Ajustamos el padding */
+        position: relative;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+        margin-right: -10px;
+        z-index: 1;
+        height: 40px; /* Fijamos altura uniforme */
+        width: 120px; /* Ajustamos el ancho */
     }
 
-    .breadcrumbs ul li:not(:last-child)::after {
-        content: ">";
-        margin-left: 5px;
+    /* Último elemento sin flecha */
+    .breadcrumb-item:last-child {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+        z-index: 0;
     }
+
+    /* Estilo para elementos completados */
+    .breadcrumb-item.completed {
+        background: #70BDEC;
+        position: relative;
+        z-index: 2;
+        width: 120px; /* Igualamos el ancho */
+        height: 40px; /* Igualamos la altura */
+    }
+
+    /* Ajuste de la flecha para los completados */
+    .breadcrumb-item.completed::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 15px solid #62e6ac;
+        z-index: 3;
+    }
+
+    /* Estilo para el breadcrumb activo */
+    .breadcrumb-item.active {
+        background: #65AAD4;
+        color: #F0F0F0;
+        position: relative;
+        z-index: 1;
+        width: 160px; /* Igualamos el ancho */
+        height: 40px; /* Igualamos la altura */
+    }
+
+    /* Elimina la barra "/" */
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: none !important;
+    }
+
 
 /*PRODUCTOS*/
 
@@ -35,19 +204,17 @@ nav .nav-item{
     .card img {
         width: 100%;  /* Hace que la imagen ocupe todo el ancho de la card */
         height: 200px; /* Establece una altura fija */
-        object-fit: cover; /* Recorta la imagen para que encaje sin distorsionarse */
+        object-fit: contain !important; /* Recorta la imagen para que encaje sin distorsionarse */
     }
 
     /* Asegura que las cards estén bien distribuidas debajo del menú */
     .contenido {
         margin-top: 80px; /* Ajusta este valor según la altura de tu menú */
-        display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .card-deck {
-        display: flex;
         flex-wrap: wrap;
         justify-content: center; /* Centra las cards horizontalmente */
         gap: 20px; /* Espaciado entre las cards */
@@ -60,10 +227,30 @@ nav .nav-item{
         overflow: hidden;
     }
 
+    .container {
+        max-width: 1200px;  /* Controla el ancho máximo */
+        margin: 0 auto;     /* Centra el container */
+        padding: 0 15px;    /* Asegura espacio a los lados */
+    }
+
+
+    /* Estilos para los enlaces de las cards */
+    .card-link {
+        text-decoration: none; /* Quita el subrayado del enlace */
+        color: inherit; /* Hereda el color del texto del elemento padre */
+        display: block; /* Hace que todo el card sea un área clickeable */
+    }
+
+    /* Efecto al pasar el cursor sobre la card */
+    .card-link .card:hover {
+        color: #000000;
+        transform: scale(1.03); /* Aumenta ligeramente el tamaño de la card */
+        transition: transform 0.2s ease-in-out; /* Suaviza la animación para que no sea brusca */
+    }
+
+
 /*VENTAS*/
 
-/**/
-    
 
 /*MAPA*/
 
@@ -97,5 +284,7 @@ nav .nav-item{
         text-decoration: none !important; /* Elimina el subrayado de los enlaces */
         color: #2C2C2C !important;
     }
+
+
 
 /*FOOTER*/
